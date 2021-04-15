@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>LVZ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+
+<body>
+
+
+
+    <div class="con1">
+
+
+
+        <form class="form1" action="" onsubmit="submitClicked(event)">
+            <div id="data">
+
+                <label for="login" value="Login">Login:</label> <br>
+                <input id="login" name="Login" type="text" maxlength="15" pattern="[a-zA-Z0-9]+" required><br>
+
+                <label for="password" value="Password">Password: </label> <br>
+                <input id="password" type="password" minlength="8" maxlength="15" pattern="([A-Za-z]{1,})([0-9]{1,})" title="Спочатку вводити латинські букви, потім цифри" required>
+
+
+            </div>
+            <br>
+            <section class="Gender">
+                <label>Gender</label>
+                <br>
+                <input type="radio" name="Gender" id="Male" value="Male" required>
+                <label for="yes">Male</label>
+                <input type="radio" name="Gender" id="Female" value="Female" required>
+                <label for="no">Female</label>
+            </section>
+
+            <br>
+            <section class="Age">
+                <label for="age">What your age?</label>
+                <select name="Age" id="age" style="background-color: #312e2b; color: #71b62c;">
+                  <option value="0-18">&lt18</option>
+                  <option value="18-40">18-40</option>
+                  <option value="40+">40&gt</option>
+                </select>
+            </section>
+            <br>
+            <label for="Txtarea">More info</label>
+            <br>
+            <textarea name="Txtarea" id="txtarea" cols="20" rows="3" style="background-color: #312e2b; color: #497220;"></textarea>
+            <br>
+            <input type="submit" value="Push me" class="b1">
+            <br>
+            <div class="links">
+                <span>
+                <a href="https://www.chess.com/learn-how-to-play-chess" target="_blank">Rules</a>
+            </span>
+                <span>
+                <a href="https://www.chess.com/puzzles/problem/606032" target="_blank">Puzzle</a>
+            </span>
+            </div>
+        </form>
+
+
+
+
+
+
+        <table>
+            <tr class="row">
+                <td class="cell1 br"></td>
+                <td class="cell2"> </td>
+                <td class="cell1 bb"></td>
+                <td class="cell2 bq"></td>
+                <td class="cell1"></td>
+                <td class="cell2 bb"></td>
+                <td class="cell1 bk"></td>
+                <td class="cell2 br"></td>
+            </tr>
+            <tr class="row">
+                <td class="cell2 bp"></td>
+                <td class="cell1 bp"></td>
+                <td class="cell2 bp"></td>
+                <td class="cell1"></td>
+                <td class="cell2"></td>
+                <td class="cell1"></td>
+                <td class="cell2 bp"></td>
+                <td class="cell1 bp"></td>
+            </tr>
+
+            <tr class="row">
+                <td class="cell1"></td>
+                <td class="cell2"> </td>
+                <td class="cell1 bn"></td>
+                <td class="cell2"></td>
+                <td class="cell1"></td>
+                <td class="cell2"></td>
+                <td class="cell1"></td>
+                <td class="cell2"></td>
+            </tr>
+            <tr class="row">
+                <td class="cell2"></td>
+                <td class="cell1"></td>
+                <td class="cell2"></td>
+                <td class="cell1 wq"></td>
+                <td class="cell2 bp"></td>
+                <td class="cell1"></td>
+                <td class="cell2"></td>
+                <td class="cell1"></td>
+            </tr>
+
+            <tr class="row">
+                <td class="cell1"> </td>
+                <td class="cell2"> </td>
+                <td class="cell1 wb"></td>
+                <td class="cell2"></td>
+                <td class="cell1"></td>
+                <td class="cell2"></td>
+                <td class="cell1"></td>
+                <td class="cell2"></td>
+            </tr>
+            <tr class="row">
+                <td class="cell2"></td>
+                <td class="cell1"></td>
+                <td class="cell2"></td>
+                <td class="cell1"></td>
+                <td class="cell2"></td>
+                <td class="cell1"></td>
+                <td class="cell2"></td>
+                <td class="cell1"></td>
+            </tr>
+
+            <tr class="row">
+                <td class="cell1 wp"> </td>
+                <td class="cell2 wp"> </td>
+                <td class="cell1 wp"></td>
+                <td class="cell2 wp"></td>
+                <td class="cell1"></td>
+                <td class="cell2 wp"></td>
+                <td class="cell1 wp"></td>
+                <td class="cell2 wp"></td>
+            </tr>
+            <tr class="row">
+                <td class="cell2 wr"></td>
+                <td class="cell1 wn"></td>
+                <td class="cell2 wb"></td>
+                <td class="cell1"></td>
+                <td class="cell2 wk"></td>
+                <td class="cell1"></td>
+                <td class="cell2"></td>
+                <td class="cell1 wr"></td>
+            </tr>
+
+        </table>
+        <span class="T">
+            <label for="time">Input secunds:</label> <br>
+            <div id="timer">00:00:00</div>
+            <input type="text" id="time" name="time" pattern="[0-9]+"><br>
+        
+            <button id="button">Start</button>
+            <br>
+            </span>
+    </div>
+
+
+    <canvas id="myChart"></canvas>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="app.js"></script>
+
+</html>

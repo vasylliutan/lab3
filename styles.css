@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Asap:400,700&display=swap");
+table {
+  width: 650px;
+  height: 650px;
+  border: 2px black solid;
+  border-spacing: 0;
+  /* margin: 100px; */
+}
+
+label {
+  color: #81cf33;
+}
+
+a {
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  margin: 4px;
+  color: #769656;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  /* transform: scale(3.3); */
+  font-size: 22px;
+  transition: all 0.3s ease;
+  text-decoration: underline;
+}
+
+.form1 {
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  border-spacing: 0;
+  border: 4px #7cdb1d solid;
+  /* border-style: solid; */
+  /* border-color: #769656; */
+  padding: 15px;
+  border-radius: 5%;
+  transition: all 0.3s ease;
+  color: #37640a;
+}
+
+.b1:hover {
+  cursor: pointer;
+  background-color: #497220;
+}
+
+body {
+  background-color: #312e2b;
+}
+
+input {
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  border-radius: 5%;
+  margin: 4px;
+  border-color: #7cf009;
+  background-color: #312e2b;
+  color: #769656;
+  font-size: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.con1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+/* #data {
+    margin: 10px;
+    padding: 10px;
+} */
+#timer {
+  color: brown;
+}
+
+.cell1 {
+  background-color: honeydew;
+  border: grey;
+}
+
+.cell2 {
+  background-color: #497220;
+  border: grey;
+}
+
+td {
+  background-size: 100%;
+}
+
+.br {
+  background-image: url(https://images.chesscomfiles.com/chess-themes/pieces/neo/150/br.png);
+}
+
+.bb {
+  background-image: url(https://images.chesscomfiles.com/chess-themes/pieces/neo/150/bb.png);
+}
+
+.bq {
+  background-image: url(https://images.chesscomfiles.com/chess-themes/pieces/neo/150/bq.png);
+}
+
+.bk {
+  background-image: url(https://images.chesscomfiles.com/chess-themes/pieces/neo/150/bk.png);
+}
+
+.bn {
+  background-image: url(https://images.chesscomfiles.com/chess-themes/pieces/neo/150/bn.png);
+}
+
+.bp {
+  background-image: url(https://images.chesscomfiles.com/chess-themes/pieces/neo/150/bp.png);
+}
+
+.wr {
+  background-image: url(https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wr.png);
+}
+
+.wb {
+  background-image: url(https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wb.png);
+}
+
+.wq {
+  background-image: url(https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wq.png);
+}
+
+.wk {
+  background-image: url(https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wk.png);
+}
+
+.wn {
+  background-image: url(https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wn.png);
+}
+
+.wp {
+  background-image: url(https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wp.png);
+}
+
+@media screen and (max-width: 1160px) {
+  .con1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  table {
+    transform: scale(0.8) translateY(-100px);
+    transition: all 0.5s ease;
+  }
+  .form1 {
+    transform: scale(0.9) translateY(-200px);
+    transition: all 0.5s ease;
+    margin-top: 150px;
+    margin-bottom: -180px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  table,
+  .form1 {
+    transform: scale(0.6) translateY(-270px) translateX(70px);
+    transition: all 0.5s ease;
+    margin-top: 100px;
+    margin-bottom: -230px;
+  }
+  .T {
+    transform: scale(0.7) translateX(70px);
+  }
+  #chart {
+    transform: translateY(-470px);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  table {
+    transform: scale(0.45) translateY(-500px) translateX(80px);
+    transition: all 0.5s ease;
+  }
+  .info {
+    transform: scale(0.7) translateY(-800px) translateX(50px);
+    transition: all 0.5s ease;
+  }
+  .timer {
+    transform: scale(0.7) translateX(170px);
+  }
+  #chart {
+    transform: translateX(50px) translateY(-650px);
+  }
+}
